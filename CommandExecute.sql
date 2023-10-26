@@ -7,7 +7,7 @@ BEGIN
 EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[CommandExecute] AS'
 END
 GO
-ALTER PROCEDURE [dbo].[CommandExecute]
+CREATE PROCEDURE [dbo].[CommandExecute]
 
 @DatabaseContext nvarchar(max),
 @Command nvarchar(max),
